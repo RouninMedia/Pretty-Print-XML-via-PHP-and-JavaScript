@@ -29,7 +29,6 @@ const formatXML = (xmlString, tabLength = 2, newlineCount = 1) => {
   let formatted = '';
     
   xmlString.split(/>\s*</).forEach((node) => {
-      
     indent = (node.match(/^\/\w/)) ? indent.substring(tab.length) : indent;
     formatted += indent + '<' + node + '>' + newline;
     indent += (node.match(/^<?\w[^>]*[^\/]$/)) ? tab : '';
