@@ -18,7 +18,7 @@ _____
 
 ## Pretty-Print XML in JavaScript
 
-### Version 1 (using Regular Expressions)
+### Version 1 (with more Regular Expressions)
 
 ```js
 const formatXML = (xmlString, tabLength = 2, newlineCount = 1) => {
@@ -49,7 +49,7 @@ console.log(formatXML(xmlString));
 
 _______
 
-### Version 2 (without Regular Expressions)
+### Version 2 (with fewer Regular Expressions)
 
 ```js
 const formatXML2 = (xmlString, tabLength = 2, newlineCount = 1) => {
@@ -65,10 +65,11 @@ const formatXML2 = (xmlString, tabLength = 2, newlineCount = 1) => {
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i];
     indent = (node[0] == '/') ? indent.slice(tab.length) : indent;
-    
     formatted += indent + '<' + node + '>' + newline;
     indent += ((node[0] != '/') && (node[node.length - 1] != '/') && (node.indexOf('</') == -1)) ? tab : '';
   }
+
+  formatted = (newlineCount === 0) ? formatted.replace(/\>\s+\</g, '><') : formatted;
   return formatted;
 }
 
