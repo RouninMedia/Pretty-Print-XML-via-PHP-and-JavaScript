@@ -19,7 +19,7 @@ function Format_XML($XML_String) {
   return $DOMDocument -> saveXML();
 }
   
-$My_Example_XML = <my><example>XML</example></my>;
+$My_Example_XML = '<my><example>XML</example></my>';
   
 echo Format_XML($XML_String);
 
