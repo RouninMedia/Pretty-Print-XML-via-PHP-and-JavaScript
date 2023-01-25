@@ -9,19 +9,19 @@ Here are three methods for pretty-printing **XML** output - one in **PHP** and t
 
 ```php
 
-function Format_XML($My_Example_XML) {
+function Format_XML($XML_String) {
 
   $DOMDocument = new \DOMDocument('1.0');
   $DOMDocument -> preserveWhiteSpace = true;
   $DOMDocument -> formatOutput = true;
-  $DOMDocument -> loadXML($My_Example_XML);
+  $DOMDocument -> loadXML($XML_String);
   
   return $DOMDocument -> saveXML();
 }
   
 $My_Example_XML = <my><example>XML</example></my>;
   
-echo Format_XML($My_Example_XML);
+echo Format_XML($XML_String);
 
 ```
 
