@@ -9,9 +9,23 @@ Here are two methods for pretty-printing XML output:
 
 ```php
 
+function Format_XML($My_Example_XML) {
+
+  $DOMDocument = new \DOMDocument('1.0');
+  $DOMDocument -> preserveWhiteSpace = true;
+  $DOMDocument -> formatOutput = true;
+  $DOMDocument -> loadXML($My_Example_XML);
+  
+  return $DOMDocument -> saveXML();
+}
+  
+$My_Example_XML = <my><example>XML</example></my>;
+  
+echo Format_XML($My_Example_XML);
+
 ```
 
-**Source:**
+**Source:** *Adapted from* **[Pretty print XML in PHP ](https://www.phpdeveloper.org.uk/pretty-print-xml-in-php/)** *by Paul in Manchester.*
 
 _____
 
