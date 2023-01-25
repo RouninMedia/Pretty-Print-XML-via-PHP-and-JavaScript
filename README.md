@@ -25,7 +25,7 @@ echo Format_XML($XML_String);
 
 ```
 
-**Source:** *Adapted from* **[Pretty print XML in PHP ](https://www.phpdeveloper.org.uk/pretty-print-xml-in-php/)** *by Paul in Manchester.*
+**Source:** *Adapted from* **[Pretty print XML in PHP ](https://www.phpdeveloper.org.uk/pretty-print-xml-in-php/)** *by Paul Waring.*
 
 _____
 
