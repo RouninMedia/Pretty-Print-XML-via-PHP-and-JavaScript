@@ -33,11 +33,7 @@ const formatXML = (xmlString, tabLength = 2, newlineCount = 1) => {
     indent += (node.match(/^<?\w[^>]*[^\/]$/)) ? tab : '';
   });
     
-  if (newlineCount === 0) {
-    
-    formatted = formatted.replace(/\>\s+\</g, '><');
-  }
-    
+  formatted = (newlineCount === 0) ? formatted.replace(/\>\s+\</g, '><') : formatted;    
   return formatted.replaceAll('<<', '<').replaceAll('>>', '>');
 }
 
