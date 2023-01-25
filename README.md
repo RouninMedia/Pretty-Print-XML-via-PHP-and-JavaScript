@@ -79,6 +79,6 @@ console.log(formatXML(xmlString));
 
 ```
 
-**Source:** *In a comment beneath the same answer by **@arcturus** (see above), Stack Overflow Member **@milahu** responded with a refactor of **@arcturus**' script: https://jsfiddle.net/fbn5j7ya/ The script immediately above is a refactor of **@milahu**'s refactor.*
+**Source:** *In a comment beneath the same answer by **@arcturus** (see above), Stack Overflow Member **@milahu** responded with a refactor of **@arcturus**' script: https://jsfiddle.net/fbn5j7ya/, eliminating several of the Regular Expressions. The script immediately above is a refactor of **@milahu**'s refactor.*
 
 
