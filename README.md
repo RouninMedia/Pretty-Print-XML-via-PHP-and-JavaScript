@@ -45,7 +45,7 @@ console.log(formatXML(xmlString));
 
 ```
 
-**Source:** *See Stack Overflow Member **@arcturus**' response (https://stackoverflow.com/questions/376373/#answer-49458964) to **@Darin Dimitrov**'s question: ["Pretty printing XML with javascript"](https://stackoverflow.com/questions/376373/pretty-printing-xml-with-javascript). The script immediately above is a more concise refactor of **@arcturus**' answer.
+**Source:** *See Stack Overflow Member **@arcturus**' response (https://stackoverflow.com/questions/376373/#answer-49458964) to **@Darin Dimitrov**'s question: ["Pretty printing XML with javascript"](https://stackoverflow.com/questions/376373/pretty-printing-xml-with-javascript). The script immediately above is a more concise refactor of **@arcturus**' answer.*
 
 _______
 
@@ -79,6 +79,6 @@ console.log(formatXML(xmlString));
 
 ```
 
-**Source:** *In a comment beneath the same answer (see above), Stack Overflow Member **@milahu** responded with a refactor of **@arcturus**' script here: https://jsfiddle.net/fbn5j7ya/ The script immediately above is a refactor of **@milahu**'s refactor.*
+**Source:** *In a comment beneath the same answer by **@arcturus** (see above), Stack Overflow Member **@milahu** responded with a refactor of **@arcturus**' script: https://jsfiddle.net/fbn5j7ya/ The script immediately above is a refactor of **@milahu**'s refactor.*
 
 
