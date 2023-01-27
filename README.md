@@ -16,7 +16,7 @@ function Format_XML($XML_String) {
   $DOMDocument -> formatOutput = true;
   $DOMDocument -> loadXML($XML_String);
   
-  return $DOMDocument -> saveXML();
+  return $DOMDocument -> saveXML($dom -> documentElement);
 }
   
 $My_Example_XML = '<my><example>XML</example></my>';
