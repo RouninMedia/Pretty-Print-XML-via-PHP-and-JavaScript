@@ -3,7 +3,11 @@ When writing **PHP** and **JavaScript**, there are many contexts in which it may
 
 **JSON** pretty-print methods are well-known.
 
-Here are three methods for pretty-printing **XML** output - one in **PHP** and two more in **JavaScript**:
+Here are:
+
+ - a method for pretty-printing **XML** output in **PHP**
+ - a *bonus method* for pretty-printing **HTML** output in **PHP**
+ - two more methods for pretty-printing **XML** output in **JavaScript**:
 
 ## Pretty-Print XML in PHP
 
