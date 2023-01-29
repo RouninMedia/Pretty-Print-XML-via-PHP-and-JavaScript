@@ -35,9 +35,33 @@ _____
 
 ## Pretty-Print HTML in PHP
 
-By utilising two specific hacks, the script above may be modified to pretty-print **HTML**:
+By utilising *two* specific hacks:
+
+ - combine `DOMDocument::loadHTML()` with `DOMDocument::saveXML()`
+ - suppress warnings on `DOMDocument::loadHTML()` via the flag `LIBXML_NOERROR`
+
+the script above may be modified to pretty-print **HTML**:
 
 ```php
+
+function Format_HTML($HTML_String) {
+
+  $DOMDocument = new \DOMDocument('1.0');
+  $DOMDocument -> preserveWhiteSpace = true;
+  $DOMDocument -> formatOutput = true;
+  $DOMDocument -> loadHTML($HTML_String, LIBXML_NOERROR);
+  $HTML_String = $DOMDocument -> saveXML($DOMDocument -> documentElement);
+
+  $HTML_String = preg_replace('/\<html\>\s*\<body\>(\s*\<)/', '$1', $HTML_String);
+  $HTML_String = preg_replace('/\>\s*\<\/body\>\s*\<\/html\>/', '>', $HTML_String);
+  $HTML_String = preg_replace('/\n\s{4}/', "\n", $HTML_String);
+
+  return $HTML_String;
+}
+  
+$My_Example_HTML = '<section><div><p class="intro"><strong>Hello.</strong> My first name is <em class="firstname">Edward</em>.</p><p class="intro">My last name is <em class="lastname">Bear</em>.</p></div></section>';
+  
+echo Format_HTML($My_Example_HTML);
 
 ```
 
