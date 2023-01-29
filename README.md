@@ -35,7 +35,7 @@ _____
 
 ## Pretty-Print HTML in PHP
 
-By utilising two hacks, the script above may be modified to pretty-print **HTML**:
+By utilising two specific hacks, the script above may be modified to pretty-print **HTML**:
 
 ```php
 
