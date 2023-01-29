@@ -1,4 +1,4 @@
-# Pretty-Print XML via PHP and JavaScript
+# Pretty-Print XML (and HTML) via PHP and JavaScript
 When writing **PHP** and **JavaScript**, there are many contexts in which it may be desirable to pretty-print data output.
 
 **JSON** pretty-print methods are well-known.
@@ -26,6 +26,16 @@ echo Format_XML($XML_String);
 ```
 
 **Source:** *Adapted from* **[Pretty print XML in PHP ](https://www.phpdeveloper.org.uk/pretty-print-xml-in-php/)** *by Paul Waring.*
+
+_____
+
+## Pretty-Print HTML in PHP
+
+By utilising two hacks, the script above may be modified to pretty-print **HTML**:
+
+```php
+
+```
 
 _____
 
